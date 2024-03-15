@@ -1,0 +1,19 @@
+# Users
+# @name createUser
+POST {{domain}}/users/signup
+content-type: application/json
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}"
+}
+
+###
+# @name login
+POST {{domain}}/users/login
+content-type: application/json
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}"
+}
